@@ -6,3 +6,6 @@ instalar angular  https://angular.io/guide/setup-local
 
 criar um novo projeto
 //: ng new my-app
+
+criar novo componente
+//: ng g c Calculadora
