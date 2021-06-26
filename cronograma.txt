@@ -1,0 +1,22 @@
+26/06
+- o que é?
+- histórico;
+- Ambiente;
+- projeto;
+- estrutura;
+- components;
+
+03/07
+- Property
+- Eventos
+
+10/07
+
+- diretivas
+- serviços
+- modulos
+
+17/07
+- rotas
+- erros de rotas
+- autenticaçaão
