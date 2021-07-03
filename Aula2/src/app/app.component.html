@@ -1,0 +1,9 @@
+<h2>Aula 2</h2>
+<button (click)="setShow()">Mostrar</button>
+<h1 *ngIf="show else elseBlock">
+  visivel se show for com valor true
+</h1>
+
+<ng-template #elseBlock>
+  <h1> else </h1>
+</ng-template>
