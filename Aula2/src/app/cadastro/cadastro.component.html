@@ -1,11 +1,18 @@
 <p>cadastro works!</p>
 <form #simpleForm="ngForm" (ngSubmit)="getValues(simpleForm.value)">
-    <input 
-       type="text" 
-       ngModel 
-       name="nome" 
-       placeholder="Informe nome" /> 
-       <br/>
+    <div>
+        <input 
+        #nome="ngModel"
+        required
+        type="text" 
+        ngModel 
+        name="nome" 
+        placeholder="Informe nome" /> 
+        <br/>
+        <span class="error" *ngIf="nome.invalid">O nome é obrigatório</span>
+
+    </div>
+    
     <input 
        type="text"
        ngModel
