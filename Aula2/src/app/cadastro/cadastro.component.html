@@ -1,0 +1,20 @@
+<p>cadastro works!</p>
+<form #simpleForm="ngForm" (ngSubmit)="getValues(simpleForm.value)">
+    <input 
+       type="text" 
+       ngModel 
+       name="nome" 
+       placeholder="Informe nome" /> 
+       <br/>
+    <input 
+       type="text"
+       ngModel
+       name="idade"
+       placeholder="Informe idade" /> <br/>
+    <input 
+       type="text"
+       ngModel
+       name="email"
+       placeholder="Informe email" /> <br/>
+    <button>Salvar</button>
+</form>

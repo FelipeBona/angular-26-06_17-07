@@ -6,18 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Aula2';
-  show=true;
-  showString='no';
-
-  setShow(){
-    this.show = !this.show;
-  }
-
-  setShowString(){
-    if (this.showString=='yes')
-       this.showString='no'
-    else
-       this.showString='yes';   
-  }
+  title = 'Aula2';  
 }
