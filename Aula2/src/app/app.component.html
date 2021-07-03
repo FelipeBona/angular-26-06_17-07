@@ -1,9 +1,25 @@
 <h2>Aula 2</h2>
 <button (click)="setShow()">Mostrar</button>
+<p>{{show}}</p>
 <h1 *ngIf="show else elseBlock">
   visivel se show for com valor true
 </h1>
 
 <ng-template #elseBlock>
   <h1> else </h1>
+</ng-template>
+
+<hr />
+<h1>Teste com String</h1>
+<button (click)="setShowString()">Trocar</button>
+<p>{{showString}}</p>
+<h1 *ngIf="showString=='yes' ; then ifBlock  else elseBlock">  
+</h1>
+
+<ng-template #ifBlock>
+  <h1> bloco if </h1>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h1> bloco else </h1>
 </ng-template>
