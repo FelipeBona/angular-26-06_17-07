@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CadastroComponent  {
 
    getValues(data:any){
-     console.warn(data);
+     this.contatos.push(data);
   }
   
   contatos = [
