@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { CondicionalComponent } from './condicional/condicional.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes = [
   {
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
       { enableTracing: true } 
     ),
     BrowserModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
