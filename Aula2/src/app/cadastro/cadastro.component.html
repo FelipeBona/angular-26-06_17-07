@@ -25,3 +25,18 @@
        placeholder="Informe email" /> <br/>
     <button>Salvar</button>
 </form>
+<div>
+    <h1>Lista de contatos</h1>
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Idade</td>
+            <td>Email</td>
+        </tr>
+        <tr *ngFor="let ct of contatos">
+            <td>{{ct.nome}}</td>
+            <td>{{ct.idade}}</td>
+            <td>{{ct.email}}</td>
+        </tr>
+    </table>    
+</div>
