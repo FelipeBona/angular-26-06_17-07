@@ -1,0 +1,17 @@
+<p>Lista de usuários</p>
+<table class="table table-striped table-dark table-hover">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Title</th>
+      <th>Completed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let user of listaUsers'>
+      <td>{{user.id}}</td>
+      <td>{{user.title}}</td>
+      <td>{{user.completed}}</td>
+    </tr>
+  </tbody>
+</table>

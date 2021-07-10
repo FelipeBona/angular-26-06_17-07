@@ -1,17 +1,5 @@
-<p>Lista de usuários</p>
-<table>
-  <thead>
-    <tr>
-      <th>id</th>
-      <th>Title</th>
-      <th>Completed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor='let user of listaUsers'>
-      <td>{{user.id}}</td>
-      <td>{{user.title}}</td>
-      <td>{{user.completed}}</td>
-    </tr>
-  </tbody>
-</table>
+<a routerLink="listar">Listar usuario</a> 
+<a routerLink="cadastrar">Cadastrar usuario</a>
+<a routerLink="listarOne">Consultar usuario por id</a>
+<a routerLink="excluir">Excluir usuario</a>
+<router-outlet></router-outlet>

@@ -10,6 +10,22 @@ export class UserService {
 
   getData(){
     let url = 'https://jsonplaceholder.typicode.com/todos';
+   
     return this.http.get(url);
   }
+
+  save(id:number){
+     var user = {
+        userId: 1,
+        id: 100,
+        title: "Vilson",
+        completed: false
+      }
+      let url = `https://jsonplaceholder.typicode.com/todos/${id}`;
+   
+      return this.http.post(url, user);
+  }
+
+ 
+    
 }
