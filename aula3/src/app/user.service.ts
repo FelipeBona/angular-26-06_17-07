@@ -26,6 +26,11 @@ export class UserService {
       return this.http.post(url, user);
   }
 
+  getOne(id:any){
+    let url = 'https://jsonplaceholder.typicode.com/todos/'+id;
+   
+    return this.http.get(url);
+  }
  
     
 }

@@ -6,14 +6,14 @@ import { UserService } from '../user.service';
   templateUrl: './user-list.component.html',
   styleUrls: ['./user-list.component.css']
 })
-export class UserListComponent  {
+export class UserListComponent {
 
-  listaUsers:any;
-  constructor(private users:UserService){
-      this.users.getData().subscribe( data => {
-        console.warn(data);
-        this.listaUsers = data;
-      })     
+  listaUsers: any;
+  constructor(private users: UserService) {
+    this.users.getData().subscribe(data => {
+      console.warn(data);
+      this.listaUsers = data;
+    })
   }
 
 }

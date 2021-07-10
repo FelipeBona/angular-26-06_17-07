@@ -4,11 +4,16 @@ import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http';
 import { UserListComponent } from './user-list/user-list.component';
 import { RouterModule, Routes } from '@angular/router';
+import { EditaUserComponent } from './edita-user/edita-user.component';
 
 const appRoutes: Routes = [
   {
     path: 'listar',
     component: UserListComponent
+  },
+  {
+    path:'listarOne',
+    component:EditaUserComponent
   }
 ]
 
@@ -16,7 +21,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    UserListComponent
+    UserListComponent,
+    EditaUserComponent
   ],
   imports: [
     RouterModule.forRoot(
