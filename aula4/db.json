@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Andrew",
+      "location": "Brazil"
+    },
+    {
+      "id": 2,
+      "name": "Julio",
+      "location": "Canadá"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "name": "Teste",
+      "location": "Blumeau",
+      "id": 5
+    },
+    {
+      "name": "Vilson",
+      "location": "Pomerode",
+      "id": 6
+    },
+    {
+      "nam": "Gabriel",
+      "location": "Blumenau",
+      "id": 7
+    }
+  ]
+}

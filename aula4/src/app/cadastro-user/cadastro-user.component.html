@@ -1,0 +1,17 @@
+<p>Cadastro de Usuário</p>
+<form #simpleForm="ngForm" (ngSubmit)="getValues(simpleForm.value)">
+    <input 
+    #nome="ngModel"
+    type="text" 
+    name="name"
+    ngModel
+    placeholder="Informe nome"/>
+    
+    <input 
+      #nome="ngModel"
+      name="location"
+      ngModel
+      type="text" 
+      placeholder="Informe localização" />
+    <button>Salvar</button>
+</form>

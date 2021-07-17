@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 
+interface IUSer {
+  id: number;
+  title: string;
+  completed: boolean;
+}
+
 @Component({
   selector: 'app-edita-user',
   templateUrl: './edita-user.component.html',
@@ -9,12 +15,13 @@ import { UserService } from '../user.service';
 export class EditaUserComponent  {
 
   constructor(private user: UserService) { }
-  
-  userRet:any;
+   userRet: any;
+   existeUser = false;
   getOne(idUser:any){
     this.user.getOne(idUser).subscribe(data => {
-      this.userRet = data;
+      this.userRet = data;      
     })
+    this.existeUser = this.userRet != null;
   }
 
 }

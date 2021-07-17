@@ -9,3 +9,16 @@ criar um novo projeto
 
 criar novo componente
 //: ng g c Calculadora
+
+
+https://github.com/instrutorvilson/angular-26-06_17-07
+
+Desafio cineminha
+
+https://github.com/instrutorvilson/cineminha
+
+https://jsonplaceholder.typicode.com/todos
+https://www.devmedia.com.br/angular-http-como-realizar-requisicoes-em-suas-aplicacoes/40642
+
+
+https://medium.com/@andrewchanm/criando-uma-api-rest-fake-com-json-server-9a312127f6d6
